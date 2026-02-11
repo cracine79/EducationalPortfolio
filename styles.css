@@ -49,6 +49,7 @@ header{
 .welcome-message{
     font-size: 30px;
     margin-top: 20px;
+    background-color: green;
 }
 
 .content{
