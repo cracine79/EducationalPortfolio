@@ -126,6 +126,7 @@ header{
  font-size: 30px;
  font-style: italic;
  margin-bottom: 20px;
+
 }
 
 .page-wrapper{
@@ -160,6 +161,7 @@ hr {
 
 .element-explanation{
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .element-wrapper-lower{
@@ -167,6 +169,28 @@ hr {
   font-size: 24px;
 }
 
+.element-description{
+  font-weight: 600;
+}
+
 #GDP{
   margin-top: 20px;
+}
+
+.standard_link_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.more-header{
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.bottom-line{
+  width: 50%;
+  margin-top: 30px;
 }
