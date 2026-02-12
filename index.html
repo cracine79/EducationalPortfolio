@@ -5,50 +5,71 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 <body>
-    <header>
-        <div id="nav-name">
-            CharLee Racine
-        </div>
-        <div id="nav-wrapper">
-            <a href="index.html">Home</a>
-            <div class="dropdown-wrapper">
-                 <div class="header-link">More About Me</div>
-                 <div class="dropdown-content">
-                    <a href="#">Teaching Experience</a>
-                    <a href="#">Teaching Philosophy</a>
-                    <a href="#">Student Teaching </a>
-                    <a href="#">Resume</a>
-                 </div>
-            </div>
-            <div class="dropdown-wrapper">
-                 <div class="header-link">Capstone</div>
-                 <div class="dropdown-content">
-                    <a href="#">POL</a>
-                    <a href="#">Survival Guide</a>
-                    <a href="#">Reflection </a>
-                 </div>
-            </div>
-            <div class="dropdown-wrapper">
-                 <div class="header-link">Teacher Quality Standards</div>
-                 <div class="dropdown-content">
-                    <a href="standard_1.html">Standard I</a>
-                    <a href="#">Standard II</a>
-                    <a href="#">Standard III</a>
-                    <a href="#">Standard IV</a>
-                 </div>
-            </div>
+    <div id="header-placeholder"></div>
+     <section id='about' class='p-section'>
+    <div class='container container-lg'>
+     
+      <h2 class='mb-5 underline'>Hi, I'm CharLee</h2>
 
-           
-        </div>
-    </header>
-    <div class="content">
+      <div class='row flex-row'>
+        <div class='col-sm-4'>
+          <div class='p-3 sticky-top' style='top: 85px;'>
+            <img src="Images/Me.png" class='circle mb-3'>
 
-        <div class="welcome-wrapper">
-            <h1 class="name">CharLee Racine</h1>
-            <p class="welcome-message">Thanks for stopping by my teaching portfolio.  I have I have 15 years experience teaching business and economics at the high school, university, and graduate school level.  I spent over 10 years living and working in China where I met my wife and started a family.  I returned to the US a few years ago and am excited to find a high school teaching opportunity that can make use of my experience! </p>
+            <ul class='list-inline mb-0 text-center'>
+              <li class='list-inline-item h4 mb-0 me-3'>
+                <a href='https://www.linkedin.com/in/charlee-racine-50241a7b/' target='_blank' class='text-dark'>
+                  <i class="bi-linkedin"></i>
+                </a>
+              </li>
+              <li class='list-inline-item h4 mb-0 me-3'>
+                <a href='https://github.com/cracine79' target='_blank' class='text-dark'>
+                  <i class="bi-github"></i>
+                </a>
+              </li>
+  
+              <li class='list-inline-item h4 mb-0 me-3'>
+                <a href='https://www.youtube.com/channel/UC84BLMH2b5kquBloCaiddrw' target='_blank' class='text-dark'>
+                  <i class="bi-youtube"></i>
+                </a>
+              </li>
+      
+            </ul>
+          </div>
         </div>
+        <div class='col-sm-8'>
+          
+   
+
+          <p class='lead'>With 20 years of experience in the field of education, I am a dedicated Business and Economics educator committed to preparing students for a global economy. My career has spanned high school, university, and graduate-level instruction, including over a decade spent living and working in China. I returned to the U.S 7 years ago and am currently working to complete my Master’s Degree in Education, I am excited to bring my international perspective and dual licensure endorsements in Business and Social Studies into a high school classroom.</p>
+          <p class='lead'>My expertise lies in the intersection of traditional pedagogy and innovative distance education. Over the past five years, I have focused on developing sophisticated synchronous and asynchronous learning materials that connect students across global boundaries. This background allows me to leverage web development and online platforms not just as tools, but as integral components of a modern, interactive curriculum. I specialize in making complex Economic and Business concepts accessible and engaging through digital integration and real-world application. </p>
+          <p class='lead'>I pride myself on being a highly coachable professional who thrives on independent development and collaborative growth. As an educator, I excel at transferring skills and concepts effectively to diverse groups of learners, whether in person or in a digital space. I am eager to find a teaching opportunity where I can utilize my global experience and technical instructional design to help students excel in a rapidly changing world.
+          </p>
+          
+     
+
+          <div class='mt-5'>
+            <a target='_blank' href='https://www.linkedin.com/in/charlee-racine-50241a7b/' class='btn btn-primary'><i class="bi-linkedin"></i> Connect on Linkedin</a>
+            <!-- <a  target='_blank' href='https://calendly.com/morganjlopes/call' class='btn btn-primary'><i class="bi-calendar-event"></i> Schedule a Call</a> -->
+            <!-- <a href='#' class='btn btn-primary'><i class="bi-download"></i> Download Resume</a> -->
+            <!-- <a href='mailto:' class='btn btn-primary'><i class="bi-envelope"></i> Send Email</a> -->
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+
     </body>
+
+    <script>
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header-placeholder').innerHTML = data;
+        });
+    </script>
 </html>

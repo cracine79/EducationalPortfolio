@@ -7,42 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
- <header>
-        <div id="nav-name">
-            CharLee Racine
-        </div>
-        <div id="nav-wrapper">
-            <a href="index.html">Home</a>
-            <div class="dropdown-wrapper">
-                 <div class="header-link">More About Me</div>
-                 <div class="dropdown-content">
-                    <a href="#">Teaching Experience</a>
-                    <a href="#">Teaching Philosophy</a>
-                    <a href="#">Student Teaching </a>
-                    <a href="#">Resume</a>
-                 </div>
-            </div>
-            <div class="dropdown-wrapper">
-                 <div class="header-link">Capstone</div>
-                 <div class="dropdown-content">
-                    <a href="#">POL</a>
-                    <a href="#">Survival Guide</a>
-                    <a href="#">Reflection </a>
-                 </div>
-            </div>
-            <div class="dropdown-wrapper">
-                 <div class="header-link">Teacher Quality Standards</div>
-                 <div class="dropdown-content">
-                    <a href="standard_1.html">Standard I</a>
-                    <a href="#">Standard II</a>
-                    <a href="#">Standard III</a>
-                    <a href="#">Standard IV</a>
-                 </div>
-            </div>
-
-           
-        </div>
-    </header>
+        <div id="header-placeholder"></div>
         <div class="page-wrapper">
             <div class="standards-wrapper">
         
@@ -94,10 +59,17 @@
             <hr class="bottom-line">
             <div class="standard_link_wrapper">
                 <div class="more-header">More Standards</div>
-                <hr>
-                <a href="standard_2.html">Standard II</a>
-                <a href="standard_3.html">Standard III</a>
-                <a href="standard_4.html">Standard IV</a>
+                <hr class="more_hr">
+                <a class ='bottom_link'  href="standard_2.html">Standard II</a>
+                <a class ='bottom_link'  href="standard_3.html">Standard III</a>
+                <a class ='bottom_link'  href="standard_4.html">Standard IV</a>
             </div>
         </div>
+    <script>
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header-placeholder').innerHTML = data;
+        });
+    </script>
 </body>
