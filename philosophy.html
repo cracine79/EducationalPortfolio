@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Philosophy | Charles Lee Racine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --brand-blue: #232d5b;
+        }
+        body { 
+            font-family: 'Inter', -apple-system, sans-serif; 
+            line-height: 1.8; 
+            color: #000000; /* Solid black text */
+            background-color: #fcfcfc; 
+        }
+        .philosophy-container { 
+            max-width: 850px; 
+            background: white; 
+            padding: 60px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            margin: 50px auto; 
+        }
+        h1 { 
+            color: var(--brand-blue); 
+            font-weight: 700; 
+            margin-bottom: 40px; 
+            text-align: center;
+        }
+        p {
+            margin-bottom: 1.5rem;
+        }
+        strong { 
+            color: #000000; /* Keep bold text black */
+        }
+        .img-placeholder {
+            margin: 2rem 0;
+            text-align: center;
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+<div class="container">
+    <article class="philosophy-container">
+        <div>
+            <h1>Teaching Philosophy</h1>
+        </div>
+
+        <p>
+            I believe that <strong>student engagement is the foremost important element of teaching and learning</strong> and the simplest way to ensure students are gaining something from the class.
+        </p>
+
+        <p>
+            I endeavor to maximize engagement through demonstrated enthusiasm for the material, regular, routinized dialogue with students, and a supportive environment where mistakes are treated as learning opportunities. I have always felt that if I am bored teaching a class, I can be assured the students are also bored, which means they are not learning. When I find the material I am teaching to be interesting, exciting, and relevant, my intellectual energy keeps students awake and focused; I believe fun and learning are not mutually exclusive, and <strong>I expect my classes to be characterized by "joyful rigor."</strong>
+        </p>
+
+        <p>
+            In order to maintain student engagement, <strong>my most relied upon tool is frequent, non-volitional questioning.</strong> By setting a classroom environment where anybody can be expected to be called upon at any time, students quickly learn to be active listeners and ask questions when they are unclear. I have found that a combination of open-ended questions and targeted inquiries directed toward specific individuals works best to challenge students at their individual levels of understanding.
+        </p>
+
+        <div class="img-placeholder">
+
+
+</div>
+
+        <p>
+            However, for students to be truly engaged, they must also feel they have the proper tools and knowledge to discuss and analyze concepts. This is why I feel that at every level of education, <strong>scaffolding is essential</strong>, especially when introducing a subject such as economics, which includes concepts that are not always intuitive. For my classes, this includes sufficient modeling of quantitative economic models, guided step-by-step tasks in creating diagrams, and consistent practice through formative assignments.
+        </p>
+
+        <p>
+            When students are given enough support when introduced to new ideas initially, it results in <strong>solid conceptual understanding and the ability to apply logic using sound reasoning and analysis.</strong> 
+        </p>
+
+        <div class="img-placeholder"></div>
+
+        <p>
+            Additionally, students must be made to feel safe to make mistakes along this way. I achieve this through teacher demonstration of best practices when making an error, openly acknowledging that everyone makes mistakes and modeling how to learn from them. I seek to set a <strong>growth-mindset culture from day one</strong>, which assumes that mistakes are an inevitable and valuable part of the learning process. I tell my students that if they aren’t making mistakes, then the material is likely too easy for them.
+        </p>
+
+        <p>
+            Finally, no student will maintain interest in a subject unless they can find personal relevance. Finding connections between the material and current economic news serves the dual purpose of <strong>grounding abstract theory in reality</strong> and encouraging students to analyze global and local developments through the lens of their academic endeavors. 
+        </p>
+
+        <p>
+            My focus is on developing student skills beyond mere memorization, moving toward a level where they are able to apply ideas and use them in meaningful evaluation. I believe that <strong>student engagement is the key</strong>, and these are a few of the ways I ensure my students are active participants in their own educational journey.
+        </p>
+
+        <footer class="mt-5 text-center">
+            <hr>
+            <a href="index.html" class="btn btn-link text-decoration-none text-dark">← Back to Portfolio</a>
+        </footer>
+    </article>
+</div>
+        <div id="footer-placeholder"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header-placeholder').innerHTML = data;
+        });
+    </script>
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer-placeholder').innerHTML = data;
+        });
+    </script>
+</body>
+</html>
