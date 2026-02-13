@@ -16,6 +16,12 @@ body {
 ul, ol {
   list-style: none;
 }
+
+#instructional-head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -110,10 +116,18 @@ header{
 #nav-wrapper{
   display: flex;
   color: white;
-  margin-right: 20px;
-  width: 50%;
+  margin-right: 60px;
+  width: 40%;
   justify-content: space-around;
 
+}
+
+#bell-schedule{
+  width: 60%
+}
+
+#schedule{
+  width: 40%;
 }
 
 #data-data{
@@ -250,9 +264,14 @@ header{
 hr {
   height: 1px;
   width: 100%;
-  background-color: 274060;
+  background-color: #274060;
   border: none;
   display: block; /* Ensures it takes up space */
+}
+
+#meeting{
+  width: 50%;
+  border: solid gray;
 }
 
 #marketing-standards{
