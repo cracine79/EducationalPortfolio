@@ -79,6 +79,23 @@ header{
     height: 80vh;
 }
 
+#foot-line{
+  height: 80px;
+  width: 100%;
+  background-color: #274060;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-link{
+  color: white;
+  font-size: 30px;
+}
+
+.footer-link:hover{
+  color:grey;
+}
 #nav-name{
     margin-left: 50px;
     font-size: 20px;
@@ -99,6 +116,16 @@ header{
 
 }
 
+#data-data{
+  width: 75%;
+}
+
+#data-instructions{
+  border: solid gray;
+  margin-bottom: 40px;
+  width: 60%;
+}
+
 .header-link{
   margin-bottom: 5px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -112,6 +139,15 @@ header{
   display: inline-block;
  
   
+}
+
+#instructions-wrapper{
+  width: 100%;
+}
+
+.mm-instructions{
+  width: 50%;
+  border: solid gray;
 }
 
 .dropdown-content{
@@ -161,6 +197,23 @@ header{
   padding: 2px;
 }
 
+.circ-img{
+  width: 50%;
+}
+
+#circ-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.two-circ{
+  display: flex;
+}
+#me-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .standards-wrapper{
   display: flex;
   flex-direction: column;
@@ -197,7 +250,7 @@ header{
 hr {
   height: 1px;
   width: 100%;
-  background-color: navy;
+  background-color: 274060;
   border: none;
   display: block; /* Ensures it takes up space */
 }
@@ -323,6 +376,11 @@ blockquote {
   justify-content: center;
   align-items: center;
 }
+#icon-box{
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
 
 #history{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -332,3 +390,18 @@ blockquote {
   font-weight: 600;
 }
 
+#CPI-calc{
+  margin-top: 30px;
+  width: 80%;
+}
+
+#CPI-form{
+  margin-top: 40px;
+  width: 50%;
+  border: solid black;
+  
+}
+
+.group{ 
+  width: 75%;
+}

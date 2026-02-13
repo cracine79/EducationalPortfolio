@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>CharLee Racine Portfolio</title>
+    <title>Quality Standard II - CharLee Racine</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -80,11 +80,19 @@
                 <a class ='bottom_link'  href="standard_4.html">Standard IV</a>
             </div>
         </div>
+        <div id="footer-placeholder"></div>
     <script>
       fetch('header.html')
         .then(response => response.text())
         .then(data => {
           document.getElementById('header-placeholder').innerHTML = data;
+        });
+    </script>
+        <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer-placeholder').innerHTML = data;
         });
     </script>
 </body>
