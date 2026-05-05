@@ -586,6 +586,7 @@ background: linear-gradient(180deg, #e3f2fd 0%, #ffffff 100%);  margin-top: -40p
   justify-content: right;
   width: full;
   display: flex;
+  margin-top: 20px;
 }
 
 #mix{
